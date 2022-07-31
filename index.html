@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-indent">
+            <div class="name-indent">Sign up</div>
+        </div>
+        <div class="main-form">
+            <div id="hidden-form">
+                <div class="table-contents">
+                    New user?
+                </div>
+                <div class="instruction-form">
+                    Use the form below to create your account.
+                </div>
+                <div class="form">
+                    <div class="quadr-cell">
+                        <div class="duble-cell" id="name-block">
+                            <label class="label-form" for="name">First Name</label>
+                            <span class="error" id="errorEmptyName">The field cannot be empty.</span>
+                            <input class="input-form" id="name" type="text" name="nameUser">
+                        </div>
+                        <div class="duble-cell">
+                            <label class="label-form" for="last-name">Last Name</label>
+                            <span class="error" id="errorEmptyLastName">The field cannot be empty.</span>
+                            <input class="input-form"  id="last-name" type="text" name="lastNameUser">
+                        </div>
+                    </div>
+                    <div class="quadr-cell">
+                        <div class="duble-cell">
+                            <label class="label-form" for="nationality">Nationality</label>
+                            <select class="input-form nationality" name="nationalityUser">
+                                <option value="1">American</option>
+                                <option value="2">Belarusian</option>
+                                <option value="3">Ukrainian</option>
+                                <option value="4">Russian</option>
+                            </select>
+                        </div>
+                        <div class="duble-cell">
+                            <label class="label-form" for="email">E-mail</label>
+                            <span class="error" id="errorValidEmail">Please enter a valid e-mail.</span>
+                            <input class="input-form"  id="email" type="text" name="emailUser">
+                        </div>
+                    </div>
+                    <div class="quadr-cell">
+                        <div class="duble-cell">
+                            <label class="label-form">Date of Birth</label>
+                            <div id="date-of-birth">
+                                <span>
+                                    <select id="day" name="day"></select>
+                                </span>
+                                <span>
+                                    <select id="month" name="month">
+                                        <option selected>January</option>
+                                        <option>February</option>
+                                        <option>March</option>
+                                        <option>April</option>
+                                        <option>May</option>
+                                        <option>June</option>
+                                        <option>July</option>
+                                        <option>August</option>
+                                        <option>September</option>
+                                        <option>October</option>
+                                        <option>November</option>
+                                        <option>December</option>
+                                    </select>
+                                </span>
+                                <span>
+                                    <select id="year" name="year"></select>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="duble-cell">
+                            <label class="label-form" for="gender">Gender</label>
+                            <div class="gender-block">
+                                <input class="input-radio left-radio"  type="radio" name="gender" value="1"><span class="gender-text">Male</span>
+                                <input class="input-radio right-radio"  type="radio" name="gender" value="2" checked><span class="gender-text">Female</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quadr-cell">
+                        <div class="duble-cell">
+                            <label class="label-form" for="password">Password</label>
+                            <span class="error" id="errorValidPassword">
+                                At least 8 characters, uppercase and lowercase letters, and numbers.
+                            </span>
+                            <input class="input-form"  id="password" type="text" name="passwordUser">
+                        </div>
+                        <div class="duble-cell">
+                            <label class="label-form" id="label-confirm" for="confirm-password">Confirm Password</label>
+                            <span class="error" id="errorConfirmPassword">Do not match.</span>
+                            <input class="input-form"  id="confirm-password" type="text" name="confirmPasswordUser">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div id="success-request">
+                    <div class="thank">Thank You!</div>
+                    <div class="registr">you registered!</div>
+                </div>
+                <div class="quadr-cell btn-block">
+                    <div class="have-account">
+                        Have an account?
+                        <a href="#">Login</a>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn-signup">
+                            Complete Signup
+                        </button>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
